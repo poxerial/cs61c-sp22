@@ -17,11 +17,12 @@ Node *create_node(int data) {
 /* Don't worry about free(), it is not in the scope of this lab */
 /* Frees the list starting at HEAD */
 void free_list(Node *head) {
-    while (head != NULL) {
+/*    while (head != NULL) {
         Node *temp = head->next;
         free(head);
         head = temp;
     }
+*/
 }
 
 /* Creates a new node whose data is set to DATA and adds it to the front of the
@@ -53,7 +54,7 @@ void print_list(struct Node *head) {
 
 /* Iteratively reverses a linked list whose first node is HEAD */
 void reverse_list(struct Node **head) {
-    if (head == NULL) {
+    if (head == NULL || *head == NULL) {
         return;
     }
     struct Node *curr = *head;
