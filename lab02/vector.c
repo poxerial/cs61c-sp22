@@ -124,7 +124,7 @@ void vector_set(vector_t *v, size_t loc, int value) {
     if (v->data == NULL) {
         allocation_failed();
     }
-    memset(v->data + v_size_before, 0, v->size - v_size_before);
+    memset(v->data + v_size_before, 0, (v->size - v_size_before) * sizeof(int));
   }
   v->data[loc] = value;
 }
