@@ -2,4 +2,11 @@
 
 Spec: [https://cs61c.org/sp22/projects/proj2/](https://cs61c.org/sp22/projects/proj2/)
 
-TODO: describe what you did
+To debug the last task, remember to run 
+```bash
+vdb ../tests/chain-1/chain.s
+```
+instead of
+```bash
+vdb ../test-src/test_classify_.*.s
+```
