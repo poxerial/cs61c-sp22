@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS= -std=gnu99 -c -fopenmp
-LDFLAGS=-fopenmp
+LDFLAGS=-fopenmp -lpthread
 OBJECTS=$(SOURCES:.c=.o)
 EXECUTABLES=hello v_add dotp
 
